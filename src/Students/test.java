@@ -8,7 +8,11 @@ public class test extends Student {
     }
     public static void main(String[] args) {
         Student s2 = new Student(20,"qazi");
-        s2.setCgpa(3.4);
+        try {
+            s2.setCgpa(3.4);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
         s2.getCgpa();
         s2.getName();
 
