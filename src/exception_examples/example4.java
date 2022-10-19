@@ -8,5 +8,6 @@ public class example4 {
         } catch (Exception e){
             e.printStackTrace();
         }
+        s.getCgpa();
     }
 }
