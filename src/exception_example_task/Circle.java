@@ -34,7 +34,7 @@ public class Circle extends Shape {
         return this.perimeter = 2*3.14*r;
     }
     public static void main(String[] args) throws Exception {
-        Circle c = new Circle(10);
+        Circle c = new Circle(-10);
 
         try {
             c.setRadius();
@@ -43,8 +43,12 @@ public class Circle extends Shape {
            System.out.println("Negative Value");
            e.printStackTrace();
         }
-        System.out.println(c.getArea());
-        System.out.println(c.getPerimeter());
+        finally {
+            System.out.println(c.getArea());
+            System.out.println(c.getPerimeter());
+            System.out.print("hello");
+        }
+
     }
 
 }
