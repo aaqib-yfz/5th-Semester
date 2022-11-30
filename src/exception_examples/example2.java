@@ -12,7 +12,7 @@ public class example2 {
             String str = scan.nextLine();
             System.out.println(str);
         } catch (FileNotFoundException e) {
-            System.out.println("file not found ");
+            System.out.println("file not found  bhai");
 
         }
     }

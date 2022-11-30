@@ -16,13 +16,21 @@ public class Outer {
         public void show() {
             System.out.println("This is inner class");
         }
+        static void m1(){
+            class innerKyandar {
+                public void show() {
+                    System.out.println("hello");
+                }
+            }
+        }
     }
     public static void main(String[] args){
         Outer.inner i = new Outer().new inner();
             i . show();
             Outer u = new Outer();
             u.outerShow();
-    }
+
+        }
 }
 
 

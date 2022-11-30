@@ -7,7 +7,7 @@ public  class Test_Abc extends Abc {
 
     @Override
     public void m1() {
-
+      System.out.print(2);
     }
 
     public static void main(String[] args){

@@ -9,15 +9,14 @@ public class Example1 {
         int n = 0 ;
         try {
             n = s1.nextInt();
-            Thread.currentThread().sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-            throw new RuntimeException(e);
-        }
-        catch (InputMismatchException e ){
+            //Thread.currentThread().sleep(1000);
+        } catch (InputMismatchException e ){
             System.out.println("you Entered String");
         }
-        System.out.println("The Value Entered is : " + num);
+        finally {
+            System.out.println("The Value Entered is : " + n);
+
+        }
 
     }
 }

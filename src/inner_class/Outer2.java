@@ -15,5 +15,6 @@ public class Outer2 {
 public static void main(String[] args){
         Outer2 x = new Outer2();
         x.outerMethod();
+        
 }
 }

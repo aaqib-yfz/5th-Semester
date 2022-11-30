@@ -1,5 +1,7 @@
 package Students;
 
+import java.util.InputMismatchException;
+
 public class Student {
 
         private int roll;
@@ -14,15 +16,22 @@ public class Student {
     public Student() {
 
     }
+   public void getRoll(){
+            this.roll = roll;
+   }
 
-
-    public void setCgpa(double c)  throws Exception /* exception waha py bhejo jaha sy ye call kiya jayega*/
+    public void setCgpa(double Cgpa)  /* exception waha py bhejo jaha sy ye call kiya jayega*/
     {
-            if (Cgpa >= 0 && Cgpa <= 4)
-            Cgpa = c;
-            else
-                throw new Exception();
-        }
+            try {
+                if (Cgpa > 0.0 && Cgpa <= 4.0)
+                    this.Cgpa = Cgpa;
+            }
+
+            catch (NumberFormatException e) {
+                    e.printStackTrace();
+
+                }
+    }
 
         public void  getCgpa() {
             System.out.println( Cgpa) ;
