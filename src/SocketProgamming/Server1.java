@@ -2,6 +2,7 @@ package SocketProgamming;
 
 import java.io.DataInput;
 import java.io.DataInputStream;
+import java.io.DataOutputStream;
 import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -15,8 +16,13 @@ public class Server1 {
         System.out.println("Connection Established");
 
         DataInputStream din = new DataInputStream(host.getInputStream()); // reads message from client
-        System.out.println(din.readUTF());
+         String Str = din.readUTF();
+         System.out.println(Str);
 
+        DataOutputStream dout = new DataOutputStream(host.getOutputStream());
+
+        // DataOutputStream allows us to send our desired data type
+        dout.writeUTF("Silamalikum Aaqib's Server Says thankyou" + " " + Str);
 
         host.close();
         sock.close();
