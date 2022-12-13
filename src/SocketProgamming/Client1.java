@@ -22,6 +22,7 @@ public static void main(String[] args) throws Exception{
 
     DataInputStream din = new DataInputStream(host.getInputStream());
     System.out.println(din.readUTF());
+
     dout.close();
     host.close();
 }
