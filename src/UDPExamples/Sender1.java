@@ -10,7 +10,7 @@ public class Sender1 {
         String msg = "Hello this is the data we are sendng using packets";
         byte [] data = msg.getBytes();
         int length = data.length;
-        InetAddress ip = InetAddress.getByName("10.48.69.117");
+        InetAddress ip = InetAddress.getByName("localhost");
         int port = 5555; // destination port no
         DatagramPacket packet = new DatagramPacket(data,length,ip,port);
         sender.send(packet);

@@ -17,7 +17,7 @@ public class Client {
            line = sc.nextLine();
            out.println(line);
            out.flush();
-           sc.close();
+//           sc.close();
         }
     }
 }

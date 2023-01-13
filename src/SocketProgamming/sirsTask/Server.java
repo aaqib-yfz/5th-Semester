@@ -32,6 +32,7 @@ class ClientHandler extends Thread{
     private Socket s;
 
     public ClientHandler(Socket s) {
+
         this.s=s;
     }
     FileWriter fr;

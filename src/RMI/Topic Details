@@ -1,0 +1,11 @@
+1 interface
+2 class implememts 1
+3  object of 2
+4 publish 3 on RMI register
+
+
+ creates remote objects
+ waits for clients to invoke methods on those objects
+ remove communication look like regular jav method
+
+ firstly make remote interface, implement it and then make objects of it

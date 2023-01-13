@@ -17,7 +17,6 @@ public static void main(String[] args) throws Exception{
     DataOutputStream dout = new DataOutputStream(host.getOutputStream());
     // DataOutputStream allows us to send our desired data type
     dout.writeUTF("This is a Message from Aaqib's Client");
-    Scanner sc = new Scanner(System.in);
 
 
     DataInputStream din = new DataInputStream(host.getInputStream());

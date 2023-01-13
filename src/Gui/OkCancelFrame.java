@@ -19,6 +19,7 @@ public class OkCancelFrame  extends JFrame {
         this.add(button1);
         this.add(button2);
         this.setVisible(true);
+        this.add(t1);
 
 
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -27,7 +28,7 @@ public class OkCancelFrame  extends JFrame {
 
         code2  canbtn = new code2();
         button2.addActionListener(canbtn);
-
+        this.setBounds(0,0,400,600);
     }
     class code1 implements ActionListener {
         @Override

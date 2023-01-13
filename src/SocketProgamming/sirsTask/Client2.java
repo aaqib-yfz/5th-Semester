@@ -15,7 +15,6 @@ public class Client2 {
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter your name or Class No: ");
         String str=sc.nextLine();
-
         BufferedReader br = new BufferedReader(new InputStreamReader(client.getInputStream()));
         String data = br.readLine();
         System.out.println(data);
